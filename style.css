@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2f363e;
+}
+.time{
+    display: flex;
+    gap: 40px;
+    color: #fff;
+}
+
+.time .circle{
+    position: relative;
+    width: 114px;
+    height: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time .circle #ampm{
+    position: relative;
+    transform: translate(-50px, -30px);
+}
+.time .circle svg{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    transform: rotate(270deg);
+    
+    
+}
+.time .circle svg circle{
+    width: 70px;
+    height: 70px;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 4;
+    transform: translate(5px, 5px);
+    
+}
+.time .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 315;
+}
+.time div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3em;
+}
